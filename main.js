@@ -266,9 +266,9 @@ const questions = [
   {
     question: "Which objects can be assigned to a purchasing organization?",
     answers: [
-      { text: "Cairo", correct: false },
-      { text: "Milan", correct: false },
-      { text: "Osaka", correct: false },
+      { text: "Cairo Plant", correct: false },
+      { text: "Milan Plant and Envron", correct: false },
+      { text: "Osaka only", correct: false },
       { text: "1. Plant 2. Supplier 3. Material master", correct: true }
     ]
   },
@@ -312,9 +312,9 @@ const questions = [
     question: "What happens when you post a goods issue in a delivery document in sales?",
     answers: [
       { text: "1. The billing due list is updated  2. The inventory quantity is updated  3. A material ledger document is created", correct: false },
-      { text: "45", correct: false },
-      { text: "88", correct: true },
-      { text: "29", correct: false }
+      { text: "The billing due list is updated", correct: false },
+      { text: "The inventory quantity is updated", correct: true },
+      { text: "A material ledger document is created", correct: false }
     ]
   },
   {
@@ -339,9 +339,9 @@ const questions = [
     question: "What does a workplace control?",
     answers: [
       { text: "1. Calculation of the costs for services provided   2. Capacity availability", correct: true },
-      { text: "1", correct: false },
-      { text: "7", correct: false },
-      { text: "5", correct: false }
+      { text: "Calculation error", correct: false },
+      { text: "human and robot error", correct: false },
+      { text: "none", correct: false }
     ]
   },
   {
@@ -350,7 +350,7 @@ const questions = [
       { text: "1. Measures  2. Cause of damage", correct: false },
       { text: "1. Equipment  2. Measures", correct: false },
       { text: "1. Equipment  2. Measures  3. Cause of damage", correct: true },
-      { text: "65", correct: false }
+      { text: "Cause of damage only", correct: false }
     ]
   },
   {
@@ -365,7 +365,7 @@ const questions = [
   {
     question: "A goods issue is posted for a production order. What's the score? ",
     answers: [
-      { text: "1996", correct: false },
+      { text: "1996 version of sap", correct: false },
       { text: "Erp prep", correct: false },
       { text: "1. The actual costs are updated in the production order.  2. Material reservation is reduced.  3. A material ledger document is created.", correct: true },
       { text: "Actual costs", correct: false }
@@ -374,9 +374,9 @@ const questions = [
   {
     question: "What is a typical sequence of process steps within the scope of planned maintenance",
     answers: [
-      { text: "General motors", correct: false },
-      { text: "samsung", correct: false },
-      { text: "Apple", correct: false },
+      { text: "General Order", correct: false },
+      { text: "Through Android Store", correct: false },
+      { text: "Through Apple Sales", correct: false },
       { text: "Create message - ???Create order - Release order - Execute order - Complete the order", correct: true }
     ]
   },
@@ -455,10 +455,10 @@ const questions = [
   {
     question: "At which step is the imputed profit and market segment calculation carried out updated? ",
     answers: [
-      { text: "USA", correct: false },
-      { text: "Ghana", correct: false },
+      { text: "USA document", correct: false },
+      { text: "Ghana Area", correct: false },
       { text: "Save billing document. X", correct: true },
-      { text: "China", correct: false }
+      { text: "China Production", correct: false }
     ]
   },
   {
@@ -591,8 +591,8 @@ const questions = [
     question: "What tasks are carried out for external reporting?",
     answers: [
       { text: "Programming level 2", correct: false },
-      { text: "20", correct: false },
-      { text: "23", correct: false },
+      { text: "20 level SAP", correct: false },
+      { text: "23 level SAP", correct: false },
       { text: "1. Manage customer accounts  2. Create a profit and loss statement", correct: true }
     ]
   },

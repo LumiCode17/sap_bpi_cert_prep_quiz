@@ -36,6 +36,23 @@ body.wrong {
   text-align: center;
 } */
 
+/*******Header******/
+header {
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  height: 40px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+    font-size: 1.5vw;
+}
+
+/**************/
 .container {
   width: 800px;
   height: 400px;
@@ -169,4 +186,29 @@ body.wrong {
 
 .hide {
   display: none;
+}
+
+/*****Footer*****/
+footer {
+    position: fixed;
+    bottom: 0px;
+    background: #fff;
+    width: 100vw;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+li {
+    padding: 10px;
+}
+footer li:hover {
+    scale: 1.5;
+    transition: .5s;
 }
