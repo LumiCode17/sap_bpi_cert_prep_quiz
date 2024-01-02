@@ -80,42 +80,42 @@ const questions = [
     question: 'Which demand elements are considered in an MRP run?',
     answers: [
       { text: 'Customer orders (SALES ORDER)', correct: true },
-      { text: 'Hyper Text Multiple Language', correct: false }
+      { text: 'Customer payment (ORDER PAYMENTS)', correct: false }
     ]
   },
   {
     question: 'Which object is created to create reports on market characteristics such as customer, product and region?',
     answers: [
       { text: 'Result object', correct: true },
-      { text: 'computer Style Sheet', correct: false },
-      { text: 'Colorful Style sheet', correct: false },
-      { text: 'Cascading Show Sheet', correct: false }
+      { text: 'Object Sheet', correct: false },
+      { text: 'Object object', correct: false },
+      { text: 'Result sheet', correct: false }
     ]
   },
   {
     question: 'What action assigns actual costs to a project?',
     answers: [
-      { text: 'Increase th value of the variable by 10', correct: false },
+      { text: 'Increase the value of the variable by 10', correct: false },
       { text: 'By removing goods from the warehouse', correct: true },
       { text: 'Increase the value of the variable by 5', correct: false },
-      { text: 'Create a new variable', correct: false }
+      { text: 'By bringing goods to the warehouse', correct: false }
     ]
   },
   {
     question: 'Which business partner role connects the supplier to your balance sheet Company code?',
     answers: [
-      { text: 'Variablename[1]', correct: false },
-      { text: 'Variablename(0)', correct: false },
-      { text: 'Variablename[first]', correct: false},
+      { text: 'F1 Vendor [F1 DEBITOR]', correct: false },
+      { text: 'F2 (CREDITOR)', correct: false },
+      { text: 'FH [DEBITOR]', correct: false},
       { text: 'FI Vendor (FI KREDITOR)', correct: true}
     ]
   },
   {
     question: 'You purchase raw materials with an order for a cost center. At which process step are financial accounting documents posted?',
     answers: [
-      { text: 'const posting', correct: false },
-      { text: 'letting it be', correct: false },
-      { text: 'var', correct: false},
+      { text: 'When creating a valued goods receipt', correct: false },
+      { text: 'When cancelling a valued goods receipt', correct: false },
+      { text: 'When posting a de-valued goods receipt', correct: false},
       { text: 'When posting a valued goods receipt', correct: true}
     ]
   },
@@ -124,15 +124,15 @@ const questions = [
     answers: [
       { text: "Account currency", correct: true },
       { text: "Expert measure", correct: false },
-      { text: "Pro cons", correct: false },
-      { text: "none", correct: false }
+      { text: "Account name", correct: false },
+      { text: "Account holder", correct: false }
     ]
   },
   {
     question: "What technological elements ensure a comprehensive optimization of the user experience when working with X and O data?",
     answers: [
-      { text: "agility level", correct: false },
-      { text: "Absolute control", correct: false },
+      { text: "1. agility level  2. Conversational FI", correct: false },
+      { text: "1. Absolute control 2. Conversational GI", correct: false },
       { text: "none", correct: false },
       { text: "1. Predictions using machine learning  2. Conversational KI", correct: true }
     ]
@@ -141,18 +141,18 @@ const questions = [
     question: "What is the result of posting a supplier invoice?",
     answers: [
       { text: "The order history is updated.", correct: true },
-      { text: "Order deleted", correct: false },
-      { text: "Order cancelled", correct: false },
+      { text: "The Order history is deleted", correct: false },
+      { text: "The order history is cancelled", correct: false },
       { text: "Re-order took place", correct: false }
     ]
   },
   {
     question: "Which controlling objects can be covered by a settlement rule in SAP S/4HANA be billed?",
     answers: [
-      { text: "get().random", correct: false },
+      { text: "1. Order creation  2. PSP element  3. Production order", correct: false },
       { text: "1. Maintenance order  2. PSP element  3. Production order", correct: true },
-      { text: "random.floor()* Math.ceil", correct: false },
-      { text: "Math.carpet(Math.rug()", correct: false }
+      { text: "1. Maintenance order  2. PSP manual  3. Production order", correct: false },
+      { text: "1. Maintenance order  2. PSP element  3. Production creation", correct: false }
     ]
   },
   {
@@ -167,28 +167,28 @@ const questions = [
   {
     question: "What data must be linked to a cost center to derive segment reporting?",
     answers: [
-      { text: "New York", correct: false },
-      { text: "London", correct: false },
+      { text: "Profit area", correct: false },
+      { text: "Profit client", correct: false },
       { text: "Profit center", correct: true },
-      { text: "Dublin", correct: false }
+      { text: "Profit city", correct: false }
     ]
   },
   {
     question: "What procedures can be used for cross-plant relocation become?",
     answers: [
-      { text: "Jeff Bezos", correct: false },
+      { text: "1. Two-step process 2. Maintenance process  3. One-step process", correct: false },
       { text: "1. Stock transfer order without delivery 2. Two-step process  3. One-step process", correct: true },
-      { text: "Bill Gates", correct: false },
-      { text: "Tony Stark", correct: false }
+      { text: "1. Stock transfer order without delivery 2. One-step process 3. Order preparation", correct: false },
+      { text: "1. Stock transfer order without delivery 2. Two-step process  3. Three-step process", correct: false }
     ]
   },
   {
     question: "When will backlog processing be considered?",
     answers: [
       { text: "If the order quantity is not fully confirmed", correct: true },
-      { text: "Intel", correct: false },
-      { text: "Amazon", correct: false },
-      { text: "Microsoft", correct: false }
+      { text: "If the order quality is not fully confirmed", correct: false },
+      { text: "If the order quantity is fully confirmed", correct: false },
+      { text: "If the order quality is fully confirmedt", correct: false }
     ]
   },
   {
@@ -203,18 +203,18 @@ const questions = [
   {
     question: "What activities can an employee carry out via Employee Self-Service?",
     answers: [
-      { text: "January 20th, 2007", correct: false },
-      { text: "January 20th, 2008", correct: false },
+      { text: "1. Enter entries in the time sheet  2. making profit hugely 3. Apply for employer benefits", correct: false },
+      { text: "1. Book a training course  2. Enter entries in the time sheet  3. No to employer benefits", correct: false },
       { text: "1. Book a training course  2. Enter entries in the time sheet  3. Apply for employer benefits", correct: true },
-      { text: "January 20th, 2010", correct: false }
+      { text: "1. Training course as a priortity  2. Enter entries in the time sheet  3. Apply for employer benefits", correct: false }
     ]
   },
   {
     question: "Name some of the features of SAP Fiori user interface design?",
     answers: [
       { text: "none", correct: false },
-      { text: "none-customizable", correct: false },
-      { text: "Non-editable", correct: false },
+      { text: "1. none-customizable 2. Role based", correct: false },
+      { text: "1. Non-editable 2. Non Role based", correct: false },
       { text: "1. Customizable  2. Role based", correct: true }
     ]
   },
@@ -222,26 +222,26 @@ const questions = [
     question: "What is mandatory when creating a business partner if you use the want to set up business partners at different organizational levels?",
     answers: [
       { text: "No idea", correct: false },
-      { text: "Billing", correct: false },
+      { text: "Billing partner role", correct: false },
       { text: "Business partner role", correct: true },
-      { text: "Money", correct: false }
+      { text: "Sales order role", correct: false }
     ]
   },
   {
     question: "What is the name of the role-based, personalized UI client that the user can use in parallel established Uls can access SAP Fiori apps?",
     answers: [
       { text: "SAP Fiori Launchpad", correct: true },
-      { text: "Christoph", correct: false },
-      { text: "New land", correct: false },
+      { text: "SAP Fiori Christopad", correct: false },
+      { text: "SAP New land pad", correct: false },
       { text: "None of the above", correct: false }
     ]
   },
   {
     question: "What happens, if you change the status of a maintenance order to -technically completed- change?",
     answers: [
-      { text: "Volleyball", correct: false },
-      { text: "Basketball", correct: false },
-      { text: "Handball", correct: false },
+      { text: "1. The invoices can be processed  2. Open sales requisitions are deleted", correct: false },
+      { text: "1. The billing can be processed  2. Close purchase requisitions are deleted", correct: false },
+      { text: "1. The invoices can be processed  2. Close purchase requisitions are deleted", correct: false },
       { text: "1. The invoices can be processed  2. Open purchase requisitions are deleted", correct: true }
     ]
   },
@@ -257,53 +257,53 @@ const questions = [
   {
     question: "What types of SAP Fiori applications directly use SAP HANA functions?",
     answers: [
-      { text: "Transactional", correct: false },
-      { text: "S/4 Hana", correct: false },
-      { text: "ERP", correct: false },
+      { text: "1. Transactional 2. Fact sheet", correct: false },
+      { text: "1. S/4 Hana 2. Hana", correct: false },
+      { text: "1. SAP ERP 2. Analytical", correct: false },
       { text: "1. Analytical 2. Fact Sheet", correct: true }
     ]
   },
   {
     question: "Which objects can be assigned to a purchasing organization?",
     answers: [
-      { text: "Cairo Plant", correct: false },
-      { text: "Milan Plant and Envron", correct: false },
-      { text: "Osaka only", correct: false },
+      { text: "1. Plant 2. Supplier only 3. Sales master", correct: false },
+      { text: "1. Area 2. Supplier only 3. Production master", correct: false },
+      { text: "1. Plant 2. Supplier only 3. Production master", correct: false },
       { text: "1. Plant 2. Supplier 3. Material master", correct: true }
     ]
   },
   {
     question: "Which master data records are used in extended planning? ",
     answers: [
-      { text: "Eldorado", correct: false },
+      { text: "1. Sales 2. Order", correct: false },
       { text: "1. Product  2. Location", correct: true },
-      { text: "Jabello", correct: false },
-      { text: "Sicily", correct: false }
+      { text: "1. Client 2. Billing", correct: false },
+      { text: "1. Values 2. Location", correct: false }
     ]
   },
   {
     question: "You want the SAP S/4HANA system to perform product cost planning. Which master data is used to calculate the quantity structure? ",
     answers: [
-      { text: "English", correct: false },
+      { text: "1. Work plan 2. Work list", correct: false },
       { text: "1. Parts list  2. Work plan", correct: true },
-      { text: "French", correct: false },
-      { text: "Bracelleto", correct: false }
+      { text: "1. Parts list 2. Parts Plan", correct: false },
+      { text: "1. Work plan 2. Work Parts", correct: false }
     ]
   },
   {
     question: "Which MRP control parameter defines the scope of a planning run, if that the system only takes into account changes that are within the planning horizon and only schedules materials to which MRP-relevant changes have been made?",
     answers: [
-      { text: "Mount Amazona", correct: false },
-      { text: "Kilimanjaro", correct: false },
+      { text: "Processing key Ariba", correct: false },
+      { text: "Processing key SAP", correct: false },
       { text: "Processing key NETCH", correct: true },
-      { text: "Idanre hill", correct: false }
+      { text: "Processing key Fiori", correct: false }
     ]
   },
   {
     question: "Which organizational elements are assigned a warehouse number in the SAP corporate structure assigned?",
     answers: [
       { text: "1. plant  2. Storage location", correct: true },
-      { text: "Client", correct: false },
+      { text: "1. Client 2. Storage location", correct: false },
       { text: "1. Client 2. Warehouse", correct: false },
       { text: "1. plant 2. Client", correct: false }
     ]
@@ -311,26 +311,26 @@ const questions = [
   {
     question: "What happens when you post a goods issue in a delivery document in sales?",
     answers: [
-      { text: "1. The billing due list is updated  2. The inventory quantity is updated  3. A material ledger document is created", correct: false },
-      { text: "The billing due list is updated", correct: false },
-      { text: "The inventory quantity is updated", correct: true },
+      { text: "1. The billing due list is updated  2. The Production quantity is updated  3. A material ledger billing is created", correct: false },
+      { text: "1. The billing due list is updated 2. Production quantity", correct: false },
+      { text: "1. The billing due list is updated  2. The inventory quantity is updated  3. A material ledger document is created", correct: true },
       { text: "A material ledger document is created", correct: false }
     ]
   },
   {
     question: "You create a new company code that you assign to the group controlling area want to assign which characteristics the new company code must have with the others company codes that are already assigned to the controlling area have in common?",
     answers: [
-      { text: "Sales order", correct: false },
+      { text: "1. Sales order 2. Fiscal year line", correct: false },
       { text: "1. Fiscal year variant  2. Operational chart of accounts", correct: true },
-      { text: "Fiscal year variant", correct: false },
+      { text: "1. Fiscal year group 2. Operational link of account", correct: false },
       { text: "Operational chart of accounts", correct: false }
     ]
   },
   {
     question: "Which data properties does the condition type control when creating condition master records?",
     answers: [
-      { text: "Jaw bone", correct: false },
-      { text: "Validity period", correct: false },
+      { text: "1. Jaw bone 2. Squadrons", correct: false },
+      { text: "1. Validity period 2. Scouting", correct: false },
       { text: "1. Validity period  2. Squadrons", correct: true },
       { text: "Squadrons", correct: false }
     ]
@@ -339,8 +339,8 @@ const questions = [
     question: "What does a workplace control?",
     answers: [
       { text: "1. Calculation of the costs for services provided   2. Capacity availability", correct: true },
-      { text: "Calculation error", correct: false },
-      { text: "human and robot error", correct: false },
+      { text: "1. Calculation error 2. Capability ability", correct: false },
+      { text: "1. human and robot error 2. Calculation of the costs for services provided", correct: false },
       { text: "none", correct: false }
     ]
   },
@@ -356,27 +356,27 @@ const questions = [
   {
     question: "You post an invoice for the purchase of a company car. Which accounts are included in the booking voucher posted?",
     answers: [
-      { text: "Iphone x", correct: false },
+      { text: "none", correct: false },
       { text: "1. Accounts payable account (Creditor Account)  2. Tax account", correct: false },
       { text: "1. Asset account  2. Accounts payable account (Creditor Account)  3. Tax account", correct: true },
-      { text: "Asset account", correct: false }
+      { text: "1. Asset account 2. Sales order 3. Account type", correct: false }
     ]
   },
   {
     question: "A goods issue is posted for a production order. What's the score? ",
     answers: [
-      { text: "1996 version of sap", correct: false },
-      { text: "Erp prep", correct: false },
+      { text: "none", correct: false },
+      { text: "1. The actual costs are updated in the production order.  2. Productionreservation is reduced.  3. A material billing document is created.", correct: false },
       { text: "1. The actual costs are updated in the production order.  2. Material reservation is reduced.  3. A material ledger document is created.", correct: true },
-      { text: "Actual costs", correct: false }
+      { text: "1. The actual costs are deleted in the production order.  2. Material reservation is reduced.  3. A material ledger document is created.", correct: false }
     ]
   },
   {
     question: "What is a typical sequence of process steps within the scope of planned maintenance",
     answers: [
-      { text: "General Order", correct: false },
-      { text: "Through Android Store", correct: false },
-      { text: "Through Apple Sales", correct: false },
+      { text: "Create message - ???Create order - Release type - Sales order - Complete the order", correct: false },
+      { text: "Create pattern - ???Create bill - Release order - Execute order - Complete the order", correct: false },
+      { text: "None", correct: false },
       { text: "Create message - ???Create order - Release order - Execute order - Complete the order", correct: true }
     ]
   },
@@ -385,34 +385,34 @@ const questions = [
     answers: [
       { text: "Cost accounting document", correct: true },
       { text: "None", correct: false },
-      { text: "No Idea", correct: false },
-      { text: "Personal Sales", correct: false }
+      { text: "SAP Fiori document", correct: false },
+      { text: "Personal Sales document", correct: false }
     ]
   },
   {
     question: "What can you record in the overall confirmation of a maintenance order?",
     answers: [
       { text: "PARSE readings", correct: false },
-      { text: "Iranes", correct: false },
+      { text: "Iranes readings", correct: false },
       { text: "Meter readings", correct: true },
-      { text: "pokustr", correct: false }
+      { text: "pokusti readings", correct: false }
     ]
   },
   {
     question: "For what reasons might you want to create an equipment master record?",
     answers: [
-      { text: "Thailand", correct: false },
+      { text: "1. To carry out maintenance measure 2. 2. To collect technical data about an object over a long period of time and to evaluate.", correct: false },
       { text: "1. To carry out maintenance measures for certain parts of your technical system carry out and record long-term evaluation.  2. To collect technical data about an object over a long period of time and to evaluate.", correct: true },
-      { text: "Zimbabwe", correct: false },
-      { text: "Argentina", correct: false }
+      { text: "1. Carrying out the billing material 2. Creating order of the customer", correct: false },
+      { text: "none", correct: false }
     ]
   },
   {
     question: "What does a booking key control?",
     answers: [
-      { text: "Clit oris", correct: false },
-      { text: "kaowe", correct: false },
-      { text: "Everest", correct: false },
+      { text: "1. Clit oris 2. Debit/Credit posting", correct: false },
+      { text: "1. kaowe 2. Account type", correct: false },
+      { text: "1. SAP Everest 2. Account type", correct: false },
       { text: "1. Account type  2. Debit/credit posting", correct: true }
     ]
   },
@@ -420,17 +420,17 @@ const questions = [
     question: "Which objects can be assigned to a profit center? ",
     answers: [
       { text: "None of the above", correct: false },
-      { text: "batval", correct: false },
-      { text: "Buenos", correct: false },
+      { text: "1. b. production  2. Sales order item", correct: false },
+      { text: "1. b. material  2. Sales billing item", correct: false },
       { text: "1. b. material  2. Sales order item", correct: true }
     ]
   },
   {
     question: "What are the advantages of using a business partner in SAP S/4HANA?",
     answers: [
-      { text: "False-It's Aquito", correct: false },
-      { text: "True", correct: false },
-      { text: "Definitely yes", correct: false },
+      { text: "1. It increases the amount of redundant data.  2. It take away the uniform architecture.", correct: false },
+      { text: "none", correct: false },
+      { text: "1. It expand the number of redundant data.  2. It offers a pattern architecture.", correct: false },
       { text: "1. It reduces the amount of redundant data.  2. It offers a uniform architecture.", correct: true }
     ]
   },
@@ -438,44 +438,44 @@ const questions = [
     question: "Which element of a maintenance order contains the field values for -Workplace-, “Tax code” and “wage information”?",
     answers: [
       { text: "Occurrence / Process", correct: true },
-      { text: "Not necessary", correct: false },
-      { text: "False", correct: false },
-      { text: "None of the above", correct: false }
+      { text: "Nupture / Process", correct: false },
+      { text: "none", correct: false },
+      { text: "Ariba / Process", correct: false }
     ]
   },
   {
     question: "Which planning tool prioritizes customer order forecasting and planning strategically use inventory buffers? ",
     answers: [
       { text: "False", correct: false },
-      { text: "Not really correct", correct: false },
+      { text: "Demand-filling material planning pipe (DFMPP)", correct: false },
       { text: "Demand-driven material requirements planning (DDMRP)", correct: true },
-      { text: "Not really true", correct: false }
+      { text: "Demand-driven production requirements planning (DDPRP", correct: false }
     ]
   },
   {
     question: "At which step is the imputed profit and market segment calculation carried out updated? ",
     answers: [
-      { text: "USA document", correct: false },
-      { text: "Ghana Area", correct: false },
+      { text: "Save billing center X", correct: false },
+      { text: "Save billing Area X", correct: false },
       { text: "Save billing document. X", correct: true },
-      { text: "China Production", correct: false }
+      { text: "Save billing type X", correct: false }
     ]
   },
   {
     question: "What is the correct term for a group of dependencies, operations and relationships in chronological order in a project? ",
     answers: [
-      { text: "Animals", correct: false },
-      { text: "Politics", correct: false },
+      { text: "Wifi plan", correct: false },
+      { text: "Internet plan", correct: false },
       { text: "Network plan", correct: true },
-      { text: "Mountains", correct: false }
+      { text: "Hotspot plan", correct: false }
     ]
   },
   {
     question: "You have created an asset master record. What other master data record can be created synchronously? ",
     answers: [
-      { text: "Giraffe", correct: false },
-      { text: "Hippopotamus", correct: false },
-      { text: "Elephant", correct: false },
+      { text: "Utensils", correct: false },
+      { text: "Tools", correct: false },
+      { text: "Material", correct: false },
       { text: "Equipment", correct: true }
     ]
   },
@@ -491,54 +491,54 @@ const questions = [
   {
     question: "Which master data in the service type is used to post a service allocation used?",
     answers: [
-      { text: "Hulk Hogan", correct: false },
-      { text: "Warrior SAP", correct: false },
+      { text: "Secondary cost map", correct: false },
+      { text: "Primary cost SAP", correct: false },
       { text: "Secondary cost type", correct: true },
-      { text: "Stone cold", correct: false }
+      { text: "none", correct: false }
     ]
   },
   {
     question: "Which master data is directly assigned to a company code",
     answers: [
-      { text: "Christians", correct: false },
+      { text: "1. Attachment 2. Sales order", correct: false },
       { text: "1. Attachment  2. Cost centers", correct: true },
-      { text: "Atheists", correct: false },
-      { text: "Monks", correct: false }
+      { text: "1. Attachment 2. Order type", correct: false },
+      { text: "none", correct: false }
     ]
   },
   {
     question: "Which residue processing strategy has the highest processing priority and will used to release confirmed inventory to help plan other orders to prioritize future inventory requirements?",
     answers: [
-      { text: "Jews", correct: false },
-      { text: "Abramohic religion", correct: false },
+      { text: "Gain / Profit", correct: false },
+      { text: "Pay / Bill", correct: false },
       { text: "Lose / Lost", correct: true },
-      { text: "Only catholics", correct: false }
+      { text: "none", correct: false }
     ]
   },
   {
     question: "What is the correct sequence of individual steps in the sales process?",
     answers: [
-      { text: "Australia", correct: false },
-      { text: "South Africa", correct: false },
+      { text: "Create sales order - Check area - Edit delivery document - Post bill issue", correct: false },
+      { text: "Create billing order - Check availability - Edit delivery paper - Post goods issue", correct: false },
       { text: "Create sales order - Check availability - Edit delivery document - Post goods issue", correct: true },
-      { text: "Iceland", correct: false }
+      { text: "none", correct: false }
     ]
   },
   {
     question: "Which of the following are business partner types in SAP S/4HANA?",
     answers: [
-      { text: "1. Client 2. Group", correct: false },
-      { text: "Organisation", correct: false },
+      { text: "1. Client 2. Group 3. Organisation", correct: false },
+      { text: "1. Organisation 2. Group 3. Worker", correct: false },
       { text: "1. organization 2. person 3. group", correct: true },
-      { text: "Pacific river", correct: false }
+      { text: "none", correct: false }
     ]
   },
   {
     question: "Which of the following are selection modes for MRP execution?",
     answers: [
-      { text: "Mpg SAP", correct: false },
-      { text: "No Idea", correct: false },
-      { text: "Joining forces", correct: false },
+      { text: "1. Mpg SAP 2. pMRP Live", correct: false },
+      { text: "None", correct: false },
+      { text: "1. h02 2. MSP Live 3. Typical MRP", correct: false },
       { text: " 1. pMRP 2. MRP Live 3. Classic MRP", correct: true }
     ]
   },
@@ -555,9 +555,9 @@ const questions = [
     question: "What is the advantage of using stock transport orders instead of rearrangements?",
     answers: [
       { text: "none", correct: false },
-      { text: "No process of the OUT-OF-TIME", correct: false },
+      { text: "No process of the OUT-OF-TIME production limit of the current order", correct: false },
       { text: "The process of issuing and receiving goods is carried out using the order history monitored.", correct: true },
-      { text: "SAPostistic process", correct: false }
+      { text: "SAPostistic process that is align with the new order process", correct: false }
     ]
   },
   {
@@ -572,10 +572,10 @@ const questions = [
   {
     question: "Which function allocates funds to the budget of a PSP-element?",
     answers: [
-      { text: "Malaria control", correct: false },
-      { text: "Corona-virus control", correct: false },
+      { text: "Ability control", correct: false },
+      { text: "Capicity control", correct: false },
       { text: "Availability control", correct: true },
-      { text: "Fever control", correct: false }
+      { text: "None-availability control", correct: false }
     ]
   },
   {
@@ -590,9 +590,9 @@ const questions = [
   {
     question: "What tasks are carried out for external reporting?",
     answers: [
-      { text: "Programming level 2", correct: false },
-      { text: "20 level SAP", correct: false },
-      { text: "23 level SAP", correct: false },
+      { text: "None", correct: false },
+      { text: "1. 20 level SAP in ecc 2. Create a profit and loss statement", correct: false },
+      { text: "1. 23 level SAP in Fiori launchpad 2. Manage customer accounts", correct: false },
       { text: "1. Manage customer accounts  2. Create a profit and loss statement", correct: true }
     ]
   },
@@ -626,7 +626,7 @@ const questions = [
   {
     question: "Which organizational units do you create for financial accounting (FI) in SAP S/4HANA finance?",
     answers: [
-      { text: "accounting area only", correct: false },
+      { text: "1. accounting area only 2. segment", correct: false },
       { text: "segment only", correct: false },
       { text: "1. accounting area 2. segment", correct: true },
       { text: "none", correct: false }
@@ -636,15 +636,15 @@ const questions = [
     question: "Which of the following statements applies to the distribution company structure",
     answers: [
       { text: "1. A sales channel can be assigned to several sales organizations.  2. A sales organization can only be assigned to one company code.   3. A division can be assigned to several sales organizations.", correct: true },
-      { text: "He jumped", correct: false },
-      { text: "He was a very tall person", correct: false },
-      { text: "Not possible", correct: false }
+      { text: "1. Creating a billing process 2. A sales channel can be assigned to several sales organizations", correct: false },
+      { text: "1. A sales channel can be assigned to several sales organizations 2. Production area and quantity increament", correct: false },
+      { text: "None", correct: false }
     ]
   },
   {
     question: "What are some of the features of SAP Extended Warehouse Management?",
     answers: [
-      { text: "Determination of the storage bin level for incoming goods", correct: false },
+      { text: "1. Determination of the storage bin level for incoming goods 2. SAP Fiori launchpad", correct: false },
       { text: "Mobile device integration", correct: false },
       { text: "1. Mobile device integration  2. Determination of the storage bin level for incoming goods", correct: true },
       { text: "none", correct: false }
@@ -653,19 +653,19 @@ const questions = [
   {
     question: "What is the result of implementing a planned order.",
     answers: [
-      { text: "RODE NEW SAP", correct: false },
-      { text: "NEO RODE SAP", correct: false },
-      { text: "NEE DREW SAP", correct: false },
+      { text: "none", correct: false },
+      { text: "1. A purchase requisition  2. A production order 3. Life pattern", correct: false },
+      { text: "1. NEE DREW SAP 2. A purchase requisition  3.. A production order", correct: false },
       { text: "1. A purchase requisition  2. A production order", correct: true }
     ]
   },
   {
     question: "Which end-to-end business processes are used by SAP S/4HANA in connection with the intelligent enterprise covered?",
     answers: [
-      { text: "Source to control", correct: false },
-      { text: "Record to Report", correct: false },
-      { text: "Source to control => Request to Service => Record to Report", correct: true },
-      { text: "Request to Service", correct: false }
+      { text: "1. Source to control 2. Production control 3. Sales planning", correct: false },
+      { text: "1. Record to Report 2. Billing creation 3. Record to Report", correct: false },
+      { text: "1. Source to control 2. Request to Service 3. Record to Report", correct: true },
+      { text: "none of these", correct: false }
     ]
   },
   {
@@ -680,19 +680,19 @@ const questions = [
   {
     question: "What is the purpose of a work breakdown structure (PSP)?",
     answers: [
-      { text: "Allocation of budgets", correct: false },
+      { text: "1. Allocation of budgets 2. Allocation of order statements", correct: false },
       { text: "1. Allocation of budgets 2. Definition of responsibilities  3. Evaluation of aggregated data", correct: true },
-      { text: "Definition of responsibilities", correct: false },
+      { text: "1. Definition of responsibilities 2. Sales order 3. Evaluation of sales", correct: false },
       { text: "Evaluation of aggregated data", correct: false }
     ]
   },
   {
     question: "What is document splitting used for?",
     answers: [
-      { text: "Breakfast in the office", correct: false },
-      { text: "Breaking code of conduct", correct: false },
+      { text: "To create a breakfast like profit line", correct: false },
+      { text: "To break code of conduct", correct: false },
       { text: "To create balance reports by segments.", correct: true },
-      { text: "Balance sheet", correct: false }
+      { text: "Balance sheet matters", correct: false }
     ]
   },
   {
@@ -701,15 +701,15 @@ const questions = [
       { text: "Check - order - payment - send - booking ", correct: false },
       { text: "none", correct: false },
       { text: "Determination of requirements - selection of suppliers - order processing - receipt of goods - Audit", correct: true },
-      { text: "ID check", correct: false }
+      { text: "ID check - billing - payments - passmark", correct: false }
     ]
   },
   {
     question: "As part of customer-made production, a raw material must be transported from the warehouse to production be issued. To which order do you post the costs for the goods issue?",
     answers: [
       { text: "a. Customer order", correct: true },
-      { text: "a Weather for two", correct: false },
-      { text: "Sunrise paycheck", correct: false },
+      { text: "a. Sales order", correct: false },
+      { text: "a. Bill paycheck", correct: false },
       { text: "none of the above", correct: false }
     ]
   },
@@ -743,7 +743,7 @@ const questions = [
   {
     question: "In which steps of customer order processing are postings made in the general ledger generated?",
     answers: [
-      { text: "Secure invoice", correct: false },
+      { text: "1. Secure invoice 2. Sales security", correct: false },
       { text: "Post goods issue", correct: false },
       { text: "1. Secure invoice  2. Post goods issue", correct: true },
       { text: "no idea", correct: false }
@@ -753,7 +753,7 @@ const questions = [
     question: "What processes can be carried out automatically when you provide feedback for book a production order?",
     answers: [
       { text: "Goods Receipt", correct: false },
-      { text: "Posting the actual costs", correct: false },
+      { text: "1. Posting the actual costs 2. Goods receipt issue 3. Profits making", correct: false },
       { text: "1. Goods Receipt  2. Goods issue  3. Posting the actual costs", correct: true },
       { text: "Goods issue", correct: false }
     ]
@@ -761,16 +761,16 @@ const questions = [
   {
     question: "Which intelligent technologies were enabled by the new line of code from SAP S/4HANAnactivated?",
     answers: [
-      { text: "Ball", correct: false },
+      { text: "1. Network Creation (NC) 2. Internet of Things (IoT) 3. Machine use (MU)", correct: false },
       { text: "1. Artificial Intelligence (AI)  2. Internet of Things (loT)  3. Machine Learning (ML)", correct: true },
-      { text: "Books", correct: false },
+      { text: "1. Artificial Intelligence (AI) 2. Networking of Things (NoT) 3. Robot Learning (RL)", correct: false },
       { text: "no idea", correct: false }
     ]
   },
   {
     question: "Which business process activities create a financial accounting document?",
     answers: [
-      { text: "Transfer inventory to another company code", correct: false },
+      { text: "1. Transfer inventory to another company code 2. Warehouse setting 3. Goods issue", correct: false },
       { text: "1. Execute depreciation run  2. Post goods issue for the production order.  3. Transfer inventory to another company code", correct: true },
       { text: "Execute depreciation run", correct: false },
       { text: "Post goods issue for the production order.", correct: false }
@@ -782,7 +782,7 @@ const questions = [
       { text: "Service entry sheet", correct: false },
       { text: "Fear of failure", correct: false },
       { text: "About service entry sheet", correct: true },
-      { text: "Fear of mountain", correct: false }
+      { text: "Fear of not making profit", correct: false }
     ]
   },
   {

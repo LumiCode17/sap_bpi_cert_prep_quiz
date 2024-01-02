@@ -52,6 +52,12 @@ header h1 {
     font-size: 1.5vw;
 }
 
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 2.5vw;
+}
+}
+
 /**************/
 .container {
   width: 50vw;
@@ -61,10 +67,12 @@ header h1 {
   border-radius: 5px;
   padding: 10px;
   box-shadow: 0 0 10px 2px;
+  text-align: center;
 }
 
 .btn-grid {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(2, auto);
   gap: 40px;
   margin: 20px 0;
@@ -75,14 +83,39 @@ header h1 {
   border: 1px solid hsl(var(--hue), 100%, 30%);
   background-color: hsl(var(--hue), 100%, 50%);
   border-radius: 5px;
-  font-size: 1.6rem;
+  font-size: 1.6vw;
   padding: 20px 20px;
   color: white;
   outline: none;
   cursor: pointer;
+  width: 20vw;
 }
 #question {
-  font-size: 2rem;
+  font-size: 2vw;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 70vw;
+    height: 70vh;
+    max-width: 100%;
+  }
+  
+  .btn {
+    font-size: 2.6vw;
+    width: 20vw;
+  }
+  #question {
+    font-size: 2.9vw;
+  }
+  .next-btn {
+    font-size: 4vw !important;
+    width: 22vw;
+  }
+  .start-btn {
+    font-size: 4vw !important;
+    width: 22vw;
+  }
 }
 
 .btn:hover {
@@ -101,13 +134,13 @@ header h1 {
 }
 
 .next-btn {
-  font-size: 2rem;
+  font-size: 2vw;
   font-weight: bold;
   padding: 20px 20px;
 }
 
 .start-btn {
-  font-size: 2rem;
+  font-size: 2vw;
   font-weight: bold;
   padding: 20px 20px;
   width: 220px;
