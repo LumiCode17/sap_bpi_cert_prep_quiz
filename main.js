@@ -80,7 +80,9 @@ const questions = [
     question: 'Which demand elements are considered in an MRP run?',
     answers: [
       { text: 'Customer orders (SALES ORDER)', correct: true },
-      { text: 'Customer payment (ORDER PAYMENTS)', correct: false }
+      { text: 'Customer payment (SALES ORDER)', correct: false },
+      { text: 'Customer payment (PAYMENT ORDER)', correct: false },
+      { text: 'Customer orders (PAYMENT ORDER)', correct: false }
     ]
   },
   {
@@ -233,7 +235,7 @@ const questions = [
       { text: "SAP Fiori Launchpad", correct: true },
       { text: "SAP Fiori Christopad", correct: false },
       { text: "SAP New land pad", correct: false },
-      { text: "None of the above", correct: false }
+      { text: "SAP Fiori Designer", correct: false }
     ]
   },
   {
@@ -401,7 +403,7 @@ const questions = [
   {
     question: "For what reasons might you want to create an equipment master record?",
     answers: [
-      { text: "1. To carry out maintenance measure 2. 2. To collect technical data about an object over a long period of time and to evaluate.", correct: false },
+      { text: "1. To carry out maintenance measure 2. To collect technical data about an object over a long period of time and to evaluate.", correct: false },
       { text: "1. To carry out maintenance measures for certain parts of your technical system carry out and record long-term evaluation.  2. To collect technical data about an object over a long period of time and to evaluate.", correct: true },
       { text: "1. Carrying out the billing material 2. Creating order of the customer", correct: false },
       { text: "none", correct: false }
@@ -410,9 +412,9 @@ const questions = [
   {
     question: "What does a booking key control?",
     answers: [
-      { text: "1. Clit oris 2. Debit/Credit posting", correct: false },
-      { text: "1. kaowe 2. Account type", correct: false },
-      { text: "1. SAP Everest 2. Account type", correct: false },
+      { text: "1. Account holder 2. Debit/Credit posting", correct: false },
+      { text: "1. Account name 2. Account type", correct: false },
+      { text: "1. Order/Billing 2. Account type", correct: false },
       { text: "1. Account type  2. Debit/credit posting", correct: true }
     ]
   },
@@ -492,9 +494,9 @@ const questions = [
     question: "Which master data in the service type is used to post a service allocation used?",
     answers: [
       { text: "Secondary cost map", correct: false },
-      { text: "Primary cost SAP", correct: false },
+      { text: "Primary cost type", correct: false },
       { text: "Secondary cost type", correct: true },
-      { text: "none", correct: false }
+      { text: "Primary cost map", correct: false }
     ]
   },
   {
@@ -591,13 +593,13 @@ const questions = [
     question: "What tasks are carried out for external reporting?",
     answers: [
       { text: "None", correct: false },
-      { text: "1. 20 level SAP in ecc 2. Create a profit and loss statement", correct: false },
-      { text: "1. 23 level SAP in Fiori launchpad 2. Manage customer accounts", correct: false },
+      { text: "1. Manage SAP in ecc 2. Create a profit and loss statement", correct: false },
+      { text: "1. Manage level SAP in Fiori launchpad 2. Manage customer accounts", correct: false },
       { text: "1. Manage customer accounts  2. Create a profit and loss statement", correct: true }
     ]
   },
   {
-    question: "For which document item do you have to specify a movement type if you have one post an accounting document? => Asset account",
+    question: "For which document item do you have to specify a movement type if you have one post an accounting document?",
     answers: [
       { text: "Germany account", correct: false },
       { text: "PPE account", correct: false },
@@ -728,11 +730,11 @@ const questions = [
       { text: "1. Materials Management (MM)  2. Human Capital Management (HCM)  3. Customer Service (CS)", correct: true },
       { text: "Price protection (pp)", correct: false },
       { text: "Customer protection (cp)", correct: false },
-      { text: "1. Materials Management (MM)  2. Price Control (PC)", correct: false }
+      { text: "1. Materials Management (MM)  2. Price Control (PC) 3. Customer Services (CS)", correct: false }
     ]
   },
   {
-    question: "Which object can you invoice an internal order for",
+    question: "Which object can you invoice an internal order for?",
     answers: [
       { text: "feedback", correct: false },
       { text: "Attachment", correct: true },
