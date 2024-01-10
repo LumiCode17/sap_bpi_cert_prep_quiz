@@ -80,44 +80,44 @@ const questions = [
     question: 'Which demand elements are considered in an MRP run?',
     answers: [
       { text: 'Customer orders (SALES ORDER)', correct: true },
-      { text: 'Customer payment (SALES ORDER)', correct: false },
-      { text: 'Customer payment (PAYMENT ORDER)', correct: false },
-      { text: 'Customer orders (PAYMENT ORDER)', correct: false }
+      { text: 'Divisions', correct: false },
+      { text: 'Planned orders', correct: false },
+      { text: 'Purchase requisitions', correct: false }
     ]
   },
   {
     question: 'Which object is created to create reports on market characteristics such as customer, product and region?',
     answers: [
       { text: 'Result object', correct: true },
-      { text: 'Object Sheet', correct: false },
-      { text: 'Object object', correct: false },
-      { text: 'Result sheet', correct: false }
+      { text: 'Profitcenter', correct: false },
+      { text: 'Sales organization', correct: false },
+      { text: 'Primary cost type', correct: false }
     ]
   },
   {
     question: 'What action assigns actual costs to a project?',
     answers: [
-      { text: 'Increase the value of the variable by 10', correct: false },
+      { text: 'By processing a cost forecast', correct: false },
       { text: 'By removing goods from the warehouse', correct: true },
-      { text: 'Increase the value of the variable by 5', correct: false },
-      { text: 'By bringing goods to the warehouse', correct: false }
+      { text: 'By saving a purchase order', correct: false },
+      { text: 'By releasing a project budget', correct: false }
     ]
   },
   {
     question: 'Which business partner role connects the supplier to your balance sheet Company code?',
     answers: [
-      { text: 'F1 Vendor [F1 DEBITOR]', correct: false },
-      { text: 'F2 (CREDITOR)', correct: false },
-      { text: 'FH [DEBITOR]', correct: false},
+      { text: 'Supplier', correct: false },
+      { text: 'FI debitor', correct: false },
+      { text: 'Business partner "General', correct: false},
       { text: 'FI Vendor (FI KREDITOR)', correct: true}
     ]
   },
   {
     question: 'You purchase raw materials with an order for a cost center. At which process step are financial accounting documents posted?',
     answers: [
-      { text: 'When creating a valued goods receipt', correct: false },
-      { text: 'When cancelling a valued goods receipt', correct: false },
-      { text: 'When posting a de-valued goods receipt', correct: false},
+      { text: 'When approving an order.', correct: false },
+      { text: 'When determining the payment method', correct: false },
+      { text: 'When saving the order', correct: false},
       { text: 'When posting a valued goods receipt', correct: true}
     ]
   },
@@ -125,17 +125,17 @@ const questions = [
     question: "What information for a general ledger account do you maintain at company code level?",
     answers: [
       { text: "Account currency", correct: true },
-      { text: "Expert measure", correct: false },
-      { text: "Account name", correct: false },
-      { text: "Account holder", correct: false }
+      { text: "Account designation", correct: false },
+      { text: "Account type", correct: false },
+      { text: "Account group", correct: false }
     ]
   },
   {
     question: "What technological elements ensure a comprehensive optimization of the user experience when working with X and O data?",
     answers: [
-      { text: "1. agility level  2. Conversational FI", correct: false },
+      { text: "Blockchain", correct: false },
       { text: "1. Absolute control 2. Conversational GI", correct: false },
-      { text: "none", correct: false },
+      { text: "Design Thinking", correct: false },
       { text: "1. Predictions using machine learning  2. Conversational KI", correct: true }
     ]
   },
@@ -143,44 +143,44 @@ const questions = [
     question: "What is the result of posting a supplier invoice?",
     answers: [
       { text: "The order history is updated.", correct: true },
-      { text: "The Order history is deleted", correct: false },
-      { text: "The order history is cancelled", correct: false },
-      { text: "Re-order took place", correct: false }
+      { text: "Open items are cleared on the vendor account", correct: false },
+      { text: "The vendor payment is posted.", correct: false },
+      { text: "The material ledger document is generated", correct: false }
     ]
   },
   {
     question: "Which controlling objects can be covered by a settlement rule in SAP S/4HANA be billed?",
     answers: [
-      { text: "1. Order creation  2. PSP element  3. Production order", correct: false },
+      { text: "1. Profitcenter  2. PSP element  3. Production order", correct: false },
       { text: "1. Maintenance order  2. PSP element  3. Production order", correct: true },
-      { text: "1. Maintenance order  2. PSP manual  3. Production order", correct: false },
+      { text: "1. Customer order  2. PSP manual  3. Production order", correct: false },
       { text: "1. Maintenance order  2. PSP element  3. Production creation", correct: false }
     ]
   },
   {
     question: "Which human capital management organizational element is in the corporate structure assigned directly to a company code?",
     answers: [
-      { text: "Area G", correct: false },
+      { text: "Position", correct: false },
       { text: "Personnel area X", correct: true },
-      { text: "Personal area F", correct: false },
-      { text: "Area D", correct: false }
+      { text: "Employee grouping", correct: false },
+      { text: "Organizational unit", correct: false }
     ]
   },
   {
     question: "What data must be linked to a cost center to derive segment reporting?",
     answers: [
-      { text: "Profit area", correct: false },
-      { text: "Profit client", correct: false },
+      { text: "G/L account", correct: false },
+      { text: "Cost center type", correct: false },
       { text: "Profit center", correct: true },
-      { text: "Profit city", correct: false }
+      { text: "Controlling area", correct: false }
     ]
   },
   {
-    question: "What procedures can be used for cross-plant relocation become?",
+    question: "What procedures can be used for cross-plant stock transfer?",
     answers: [
-      { text: "1. Two-step process 2. Maintenance process  3. One-step process", correct: false },
+      { text: "1. Stock transport order without delivery", correct: false },
       { text: "1. Stock transfer order without delivery 2. Two-step process  3. One-step process", correct: true },
-      { text: "1. Stock transfer order without delivery 2. One-step process 3. Order preparation", correct: false },
+      { text: "Warehouse disposition and warehouse reorganization", correct: false },
       { text: "1. Stock transfer order without delivery 2. Two-step process  3. Three-step process", correct: false }
     ]
   },
@@ -188,25 +188,25 @@ const questions = [
     question: "When will backlog processing be considered?",
     answers: [
       { text: "If the order quantity is not fully confirmed", correct: true },
-      { text: "If the order quality is not fully confirmed", correct: false },
-      { text: "If the order quantity is fully confirmed", correct: false },
-      { text: "If the order quality is fully confirmedt", correct: false }
+      { text: "If no extended Available-to-Promise is available.", correct: false },
+      { text: "If delivery dates can be met.", correct: false },
+      { text: "When securing a customer order.", correct: false }
     ]
   },
   {
     question: "Which document causes a commitment to be created for an internal order when it is saved?",
     answers: [
-      { text: "Super", correct: false },
-      { text: "Sales", correct: false },
-      { text: "Nothing", correct: false },
-      { text: "Order", correct: true }
+      { text: "Maintenance order", correct: false },
+      { text: "Customer order", correct: false },
+      { text: "Production order", correct: false },
+      { text: "Purchase Order", correct: true }
     ]
   },
   {
     question: "What activities can an employee carry out via Employee Self-Service?",
     answers: [
-      { text: "1. Enter entries in the time sheet  2. making profit hugely 3. Apply for employer benefits", correct: false },
-      { text: "1. Book a training course  2. Enter entries in the time sheet  3. No to employer benefits", correct: false },
+      { text: "1. Plan costs  2. making profit hugely 3. Apply for employer benefits", correct: false },
+      { text: "1. Plan a budget  2. Enter entries in the time sheet  3. No to employer benefits", correct: false },
       { text: "1. Book a training course  2. Enter entries in the time sheet  3. Apply for employer benefits", correct: true },
       { text: "1. Training course as a priortity  2. Enter entries in the time sheet  3. Apply for employer benefits", correct: false }
     ]
@@ -214,8 +214,8 @@ const questions = [
   {
     question: "Name some of the features of SAP Fiori user interface design?",
     answers: [
-      { text: "none", correct: false },
-      { text: "1. none-customizable 2. Role based", correct: false },
+      { text: "Data-based", correct: false },
+      { text: "1. Function-based 2. Role based", correct: false },
       { text: "1. Non-editable 2. Non Role based", correct: false },
       { text: "1. Customizable  2. Role based", correct: true }
     ]
@@ -223,37 +223,37 @@ const questions = [
   {
     question: "What is mandatory when creating a business partner if you use the want to set up business partners at different organizational levels?",
     answers: [
-      { text: "No idea", correct: false },
-      { text: "Billing partner role", correct: false },
+      { text: "Account group", correct: false },
+      { text: "Business partner function", correct: false },
       { text: "Business partner role", correct: true },
-      { text: "Sales order role", correct: false }
+      { text: "Business partner type", correct: false }
     ]
   },
   {
     question: "What is the name of the role-based, personalized UI client that the user can use in parallel established Uls can access SAP Fiori apps?",
     answers: [
       { text: "SAP Fiori Launchpad", correct: true },
-      { text: "SAP Fiori Christopad", correct: false },
-      { text: "SAP New land pad", correct: false },
+      { text: "SAP Business Client", correct: false },
+      { text: "SAP Desian Study", correct: false },
       { text: "SAP Fiori Designer", correct: false }
     ]
   },
   {
     question: "What happens, if you change the status of a maintenance order to -technically completed- change?",
     answers: [
-      { text: "1. The invoices can be processed  2. Open sales requisitions are deleted", correct: false },
+      { text: "1. The material list is updated in the maintenance notification  2. Open sales requisitions are deleted", correct: false },
       { text: "1. The billing can be processed  2. Close purchase requisitions are deleted", correct: false },
-      { text: "1. The invoices can be processed  2. Close purchase requisitions are deleted", correct: false },
+      { text: "1. The billing rule is executed  2. Close purchase requisitions are deleted", correct: false },
       { text: "1. The invoices can be processed  2. Open purchase requisitions are deleted", correct: true }
     ]
   },
   {
     question: "Which of the following represents an overarching unity of all organizational elements in SAP S/4HANA?",
     answers: [
-      { text: "Sales", correct: false },
-      { text: "Order", correct: false },
+      { text: "Company code", correct: false },
+      { text: "Operating concern", correct: false },
       { text: "Client", correct: true },
-      { text: "None of the above", correct: false }
+      { text: "Controlling area", correct: false }
     ]
   },
   {
@@ -797,3 +797,106 @@ const questions = [
     ]
   }
 ]
+
+
+//Clock
+const time = document.getElementById("time");
+const day = document.getElementById("day");
+const midday = document.getElementById("midday");
+
+let clock = setInterval(
+	function calcTime() {
+		let date_now = new Date();
+		let hr = date_now.getHours();
+		let min = date_now.getMinutes();
+		let sec = date_now.getSeconds();
+		let middayValue = "AM";
+
+		let days = [
+			"Sunday",
+			"Monday",
+			"Tuesday",
+			"Wednesday",
+			"Thursday",
+			"Friday",
+			"Saturday"
+		];
+
+		day.textContent = days[date_now.getDay()];
+
+		middayValue = hr >= 12 ? "PM" : "AM";
+
+		if (hr == 0) {
+			hr = 12;
+		} else if (hr > 12) {
+			hr -= 12;
+		}
+
+		hr = hr < 10 ? "0" + hr : hr;
+		min = min < 10 ? "0" + min : min;
+		sec = sec < 10 ? "0" + sec : sec;
+
+		time.textContent = hr + ":" + min + ":" + sec;
+		midday.textContent = middayValue;
+	},
+
+	1000
+);
+
+//Countdown Timer
+const eventDate = new Date().getTime() + 1000 * 90 * 60;        // date of the Event we countdown - 1hr from refresh
+
+const timer = setInterval(() => {
+    const actualTime = new Date().getTime();
+    const difference = eventDate - actualTime; 
+    console.log(difference);
+
+    const minutes = difference % (1000 * 90 * 60) / (1000 * 60);
+    const seconds = difference % (1000 * 60) / 1000;
+
+    const minDozens = Math.floor(minutes / 10);
+    const minUnity = Math.floor(minutes % 10);
+    const secDozens = Math.floor(seconds / 10);
+    const secUnity = Math.floor(seconds % 10);
+
+    const hMinDozens = document.getElementById('min-dozens');
+    const hMinUnits = document.getElementById('min-unity');
+    const hSecDozens = document.getElementById('sec-dozens');
+    const hSecUnits = document.getElementById('sec-unity');
+
+    hMinDozens.innerHTML = minDozens;
+    hMinUnits.innerHTML = minUnity;
+    hSecDozens.innerHTML = secDozens;
+    hSecUnits.innerHTML = secUnity;
+
+    hMinDozens.classList.remove('timer-blur');
+    hMinUnits.classList.remove('timer-blur');
+    hSecDozens.classList.remove('timer-blur');
+    hSecUnits.classList.remove('timer-blur');
+
+    if(seconds % 1 < 0.3){
+        hSecUnits.classList.add('timer-blur'); // second update
+        if(secUnity == 0) {
+            hSecDozens.classList.add('timer-blur');     // second dozens update
+            if(secDozens == 0) {
+                hMinUnits.classList.add('timer-blur');  // min update
+                if(minUnity == 0) {
+                    hMinDozens.classList.add('timer-blur'); // min dozens update
+                }
+            }
+        }
+    }
+    
+
+    if(difference < 0){
+        document.getElementById('message').innerHTML = "Thank you for nice time together 😄";
+        
+      hSecUnits.classList.remove('timer-blur');
+      
+        hMinDozens.innerHTML = 0;
+        hMinUnits.innerHTML = 0;
+        hSecDozens.innerHTML = 0;
+        hSecUnits.innerHTML = 0;
+        clearInterval(timer);
+    }
+}, 200);

@@ -247,3 +247,113 @@ footer li:hover {
     scale: 1.5;
     transition: .5s;
 }
+
+/********Clock********/
+.box {
+   position: fixed;
+   top: 60px;
+   left: 20px;
+}
+
+.wrapper {
+	text-align: center;
+}
+#time {
+	font-size: 20px;
+	display: inline-block;
+}
+#day {
+	position: relative;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #c5c5c5;
+	text-align: center;
+}
+#midday {
+	display: inline-block;
+	font-size: 20px;
+}
+
+/**********Countdown Timer*********/
+.main-wrapper {
+  
+  position: fixed;
+  top: 10px;
+  right: 30px;
+}
+.timer-wrapper {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(13, 28, 156);
+}
+
+.timer-section {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.timer {
+  width: 30px;
+  height: 40px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 2px;
+  font-family: 'Metrophobic', sans-serif;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  -webkit-transition: 0.2s all;
+  -o-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+
+.timer-blur {
+  background-color: gold; 
+  -webkit-filter: blur(3px); 
+          filter: blur(3px);
+  -webkit-transition: 0.2s all;
+  -o-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+#message {
+  text-align: center;
+  font-family: 'Niconne', cursive;
+  -webkit-animation: pulsate 4s infinite;
+          animation: pulsate 4s infinite;
+  line-height: 80px;
+  font-size: 40px;
+}
+
+@-webkit-keyframes pulsate {
+  0% {font-size: 40px}
+  20% {font-size: 45px}
+  40% {font-size: 40px}
+  60% {font-size: 45px}
+  80% {font-size: 40px}
+  100% {font-size: 40px}
+}
+
+@keyframes pulsate {
+  0% {font-size: 40px}
+  20% {font-size: 45px}
+  40% {font-size: 40px}
+  60% {font-size: 45px}
+  80% {font-size: 40px}
+  100% {font-size: 40px}
+}
+
+
+

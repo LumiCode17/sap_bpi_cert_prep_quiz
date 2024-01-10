@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,39 @@
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <title>Quiz App</title>
 </head>
+
 <body>
-    <header>
-        <h1 class = head>SAP BPI Test tool</h1>
-    </header>
+  <header>
+    <h1 class=head>SAP BPI Test tool</h1>
+  </header>
+
+  <!--clock-->
+  <div class="box">
+    <div class="clock">
+      <div id="day"></div>
+      <div class="wrapper">
+        <div id="time"></div>
+        <div id="midday"></div>
+      </div>
+    </div>
+  </div>
+
+  <!--Countdown Timer 1.5hr-->
+  <div class="main-wrapper">
+    <div class="timer-wrapper">
+      <div class="timer-section">
+        <div id="min-dozens" class="timer">9</div>
+        <div id="min-unity" class="timer">0</div>
+      </div>
+
+      <div class="timer-section">
+        <div id="sec-dozens" class="timer">0</div>
+        <div id="sec-unity" class="timer">0</div>
+      </div>
+    </div>
+
+    <p id="message"></p>
+  </div>
 
   <!-----Quiz----->
   <div class="container">
@@ -34,13 +64,21 @@
 
   <footer>
     <ul>
-        <li><a href="https://github.com/LumiCode17" target="_blank"><box-icon type='logo' name='github' color="black"></box-icon></a></li>
-        <li><a href="https://www.linkedin.com/in/olumide-jones-ab2031215/" target="_blank"><box-icon name='linkedin-square' type='logo' color="blue"></box-icon></a></li>
-        <li><a href="https://www.instagram.com/tribe_of_jones/" target="_blank"><box-icon name='instagram' type='logo' color="#ff0066"></box-icon></a></li>
-        <li><a href="https://www.tiktok.com/@tribe_of_jones/" target="_blank"><box-icon name='tiktok' type='logo' color="black"></box-icon></a></li>
-        <li><a href="https://open.spotify.com/artist/3yqkjMHcqHPOqML0JH89mA?si=kWeD7OZURGuN3-eJBLPlFw&nd=1&dlsi=b18c1ccc2a044b64" target="_blank"><box-icon name='spotify' type='logo' color="green"></box-icon></a></li>
-        <li><a href="https://music.apple.com/us/artist/tribe-of-jones/1574320598" target="_blank"><box-icon name='music' type='solid' color="#ff0066"></box-icon></a></li>
+      <li><a href="https://github.com/LumiCode17" target="_blank"><box-icon type='logo' name='github'
+            color="black"></box-icon></a></li>
+      <li><a href="https://www.linkedin.com/in/olumide-jones-ab2031215/" target="_blank"><box-icon
+            name='linkedin-square' type='logo' color="blue"></box-icon></a></li>
+      <li><a href="https://www.instagram.com/tribe_of_jones/" target="_blank"><box-icon name='instagram' type='logo'
+            color="#ff0066"></box-icon></a></li>
+      <li><a href="https://www.tiktok.com/@tribe_of_jones/" target="_blank"><box-icon name='tiktok' type='logo'
+            color="black"></box-icon></a></li>
+      <li><a
+          href="https://open.spotify.com/artist/3yqkjMHcqHPOqML0JH89mA?si=kWeD7OZURGuN3-eJBLPlFw&nd=1&dlsi=b18c1ccc2a044b64"
+          target="_blank"><box-icon name='spotify' type='logo' color="green"></box-icon></a></li>
+      <li><a href="https://music.apple.com/us/artist/tribe-of-jones/1574320598" target="_blank"><box-icon name='music'
+            type='solid' color="#ff0066"></box-icon></a></li>
     </ul>
   </footer>
 </body>
+
 </html>
